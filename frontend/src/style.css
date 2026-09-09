@@ -2,26 +2,27 @@
 
 @layer base {
   :root {
-    --bg-graphite: #0f1015;
-    --bg-card: #17181f;
-    --border-subtle: #262833;
-    --amber-accent: #eab308;
-    --titanium: #9ca3af;
+    --bg-offwhite: #faf8f5;
+    --card-white: #ffffff;
+    --border-warm: #e7e5e4;
+    --text-primary: #1c1917;
+    --text-secondary: #57534e;
+    --btn-matte: #18181b;
   }
 
   html {
     scroll-behavior: smooth;
-    background-color: #0f1015;
-    color: #f3f4f6;
+    background-color: #faf8f5;
+    color: #1c1917;
     font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    text-rendering: optimizeSpeed;
   }
 
   body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
-    background-color: #0f1015;
+    background-color: #faf8f5;
+    color: #1c1917;
     overflow-x: hidden;
   }
 
@@ -30,44 +31,25 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: #0f1015;
+    background-color: #faf8f5;
   }
 }
 
-/* Otimização de renderização e scroll 60 FPS */
-* {
-  box-sizing: border-box;
-}
-
-/* Classes utilitárias sólidas (zero lag, sem blur) */
-.bg-graphite {
-  background-color: #0f1015;
-}
-
-.bg-card-solid {
-  background-color: #17181f;
-}
-
-.border-subtle {
-  border-color: #262833;
-}
-
-/* Scrollbar técnica e discreta */
+/* Scrollbar suave em tom cinza quente */
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #0f1015;
+  background: #faf8f5;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #262833;
+  background: #d6d3d1;
   border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #3f4254;
+  background: #a8a29e;
 }
-

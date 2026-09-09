@@ -1,29 +1,22 @@
 export type ViewMode = 'client' | 'dashboard'
 
-export type EventStatus = 'Confirmado' | 'Sinal Pago' | 'Em Edição' | 'Entregue'
-
-export interface EventItem {
-  id: string
-  couple: string
-  date: string
-  location: string
-  packageDetails: string
-  totalValue: number
-  status: EventStatus
+export interface CoveragePackage {
+  id: 'essencial' | 'completo'
+  name: string
+  subtitle: string
+  features: string[]
+  price: number
+  highlight?: boolean
 }
 
 export interface LeadItem {
   id: string
-  couple: string
+  coupleName: string
   phone: string
   date: string
-  location: string
-  logistics: string
-  cameras: string
+  packageName: string
   addons: string[]
-  paymentType: 'avista' | 'parcelado'
   totalValue: number
   installmentsInfo: string
   createdAt: string
-  status: 'Novo Lead' | 'Aprovado' | 'Em Negociação'
 }
